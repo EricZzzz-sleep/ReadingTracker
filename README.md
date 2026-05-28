@@ -1,6 +1,6 @@
 # Reading Tracker
 
-A personal reading tracker that helps users record books, track reading progress, write notes, and review completed books.
+A personal reading tracker that helps users record books, track reading progress, write notes, save vocabulary, and write summaries.
 
 ## Features
 
@@ -30,11 +30,28 @@ ReadingTracker/
 │   └── assets/
 ├── backend/
 │   └── README.md
+├── index.html
 ├── README.md
 └── LICENSE
 ```
 
-The current frontend pages are located in `frontend/`. Open `frontend/index.html` or run a local static server from the `frontend/` folder. The `backend/` folder is prepared for the future Django implementation.
+The current frontend pages are located in `frontend/`. The root `index.html` redirects to the dashboard page for easier opening and deployment. The `backend/` folder is prepared for the future Django implementation.
+
+## Run Locally
+
+From the project root:
+
+```bash
+cd frontend
+python3 -m http.server 8000
+```
+
+Then open:
+
+- Dashboard: `http://localhost:8000/`
+- Shelf: `http://localhost:8000/shelf.html`
+- Notes: `http://localhost:8000/notes.html`
+- Vocabulary: `http://localhost:8000/vocabulary.html`
 
 ## My Contribution
 

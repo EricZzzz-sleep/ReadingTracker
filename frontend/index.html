@@ -21,7 +21,7 @@
       </div>
 
       <nav class="nav-list" aria-label="Reading sections">
-        <a class="nav-item active" href="index.html">
+        <a class="nav-item active" href="index.html" aria-current="page">
           Dashboard
         </a>
         <a class="nav-item" href="shelf.html">
@@ -92,82 +92,96 @@
         </article>
       </section>
 
-      <section class="content-grid">
+      <section class="content-grid dashboard-books">
         <div class="library-section">
           <div class="section-header">
             <div>
               <p class="eyebrow">Library</p>
-              <h2>Active books</h2>
+              <h2>Active books with captures</h2>
             </div>
             <button class="ghost-action" type="button">Filter</button>
           </div>
 
           <div class="book-list">
-            <article class="book-card">
-              <div class="book-cover cover-teal">
-                <span>UX</span>
+            <article class="book-card book-card-expanded">
+              <div class="book-row">
+                <div class="book-cover cover-teal">
+                  <span>UX</span>
+                </div>
+                <div class="book-info">
+                  <h3>Practical Reading Systems</h3>
+                  <p>Page 96 of 210</p>
+                  <div class="mini-track" aria-hidden="true"><span style="width: 46%"></span></div>
+                </div>
+                <span class="book-percent">46%</span>
               </div>
-              <div class="book-info">
-                <h3>Practical Reading Systems</h3>
-                <p>Page 96 of 210</p>
-                <div class="mini-track" aria-hidden="true"><span style="width: 46%"></span></div>
+              <div class="book-captures">
+                <div>
+                  <span class="capture-label">Notes</span>
+                  <strong>18</strong>
+                  <p>Feedback loops make progress visible.</p>
+                </div>
+                <div>
+                  <span class="capture-label">Vocabulary</span>
+                  <strong>6</strong>
+                  <p>Annotation, retention, synthesis</p>
+                </div>
               </div>
-              <span class="book-percent">46%</span>
             </article>
 
-            <article class="book-card">
-              <div class="book-cover cover-rose">
-                <span>NO</span>
+            <article class="book-card book-card-expanded">
+              <div class="book-row">
+                <div class="book-cover cover-rose">
+                  <span>NO</span>
+                </div>
+                <div class="book-info">
+                  <h3>Notes on Observation</h3>
+                  <p>Page 151 of 240</p>
+                  <div class="mini-track" aria-hidden="true"><span style="width: 63%"></span></div>
+                </div>
+                <span class="book-percent">63%</span>
               </div>
-              <div class="book-info">
-                <h3>Notes on Observation</h3>
-                <p>Page 151 of 240</p>
-                <div class="mini-track" aria-hidden="true"><span style="width: 63%"></span></div>
+              <div class="book-captures">
+                <div>
+                  <span class="capture-label">Notes</span>
+                  <strong>27</strong>
+                  <p>Observation patterns and chapter summary.</p>
+                </div>
+                <div>
+                  <span class="capture-label">Vocabulary</span>
+                  <strong>9</strong>
+                  <p>Salient, empirical, notation</p>
+                </div>
               </div>
-              <span class="book-percent">63%</span>
             </article>
 
-            <article class="book-card">
-              <div class="book-cover cover-gold">
-                <span>LM</span>
+            <article class="book-card book-card-expanded">
+              <div class="book-row">
+                <div class="book-cover cover-gold">
+                  <span>LM</span>
+                </div>
+                <div class="book-info">
+                  <h3>Language and Memory</h3>
+                  <p>Page 44 of 320</p>
+                  <div class="mini-track" aria-hidden="true"><span style="width: 14%"></span></div>
+                </div>
+                <span class="book-percent">14%</span>
               </div>
-              <div class="book-info">
-                <h3>Language and Memory</h3>
-                <p>Page 44 of 320</p>
-                <div class="mini-track" aria-hidden="true"><span style="width: 14%"></span></div>
+              <div class="book-captures">
+                <div>
+                  <span class="capture-label">Notes</span>
+                  <strong>7</strong>
+                  <p>Memory devices and recall practice.</p>
+                </div>
+                <div>
+                  <span class="capture-label">Vocabulary</span>
+                  <strong>4</strong>
+                  <p>Mnemonic, retrieval, encoding</p>
+                </div>
               </div>
-              <span class="book-percent">14%</span>
             </article>
           </div>
         </div>
-
-        <aside class="insight-panel" aria-label="Notes and vocabulary">
-          <div class="section-header compact">
-            <div>
-              <p class="eyebrow">Notebook</p>
-              <h2>Recent captures</h2>
-            </div>
-          </div>
-
-          <article class="note-card">
-            <span class="note-type">Quote</span>
-            <p>"A good tool disappears when the reader is thinking."</p>
-            <small>Page 184</small>
-          </article>
-
-          <article class="vocab-card">
-            <div>
-              <span class="note-type">Vocabulary</span>
-              <h3>Affordance</h3>
-            </div>
-            <p>A quality that suggests how an object should be used.</p>
-          </article>
-
-          <article class="summary-card">
-            <span class="note-type">Summary draft</span>
-            <p>Chapter 6 connects clear feedback loops with confidence while reading complex material.</p>
-          </article>
-        </aside>
       </section>
     </main>
   </div>
